@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Setting - BankDash</title>
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lato:wght@400;600&family=Montserrat:wght@900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="assets/css/style-v2.css">
+    <link rel="stylesheet" href="assets/css/setting.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="assets/img/05a819c367411690aa8c050192d3c313d1614713.png" alt="BankDash Logo">
+                <h1>Bankku.</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li><a href="#"><i class="material-symbols-rounded">contract</i> Transactions</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i> Accounts</a></li>
+                <li><a href="#"><i class="ri-bar-chart-2-fill"></i> Investments</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-credit-card"></i> Credit Cards</a></li>
+                <li><a href="#"><i class="ri-hand-coin-fill"></i> Loans</a></li>
+                <li><a href="services.html"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
+                <li><a href="#"><i class="ri-medal-fill"></i> My Privileges</a></li>
+                <li class="active"><a href="setting.html"><i class="ri-settings-3-fill"></i> Setting</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-panel">
+            <header>
+                <div class="header-left">
+                    <i class="ri-menu-line hamburger-icon"></i>
+                    <h2>Setting</h2>
+                </div>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <i class="ri-search-line"></i>
+                        <input type="text" placeholder="Search for something">
+                    </div>
+                    <div class="icon-wrapper settings-wrapper">
+                        <i class="ri-settings-3-fill"></i>
+                    </div>
+                    <div class="icon-wrapper notification-wrapper">
+                        <i class="ri-notification-3-line"></i>
+                    </div>
+                    <img src="https://i.pravatar.cc/40?img=32" alt="User" class="profile-pic">
+                </div>
+            </header>
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <i class="ri-search-line"></i>
+                    <input type="text" placeholder="Search for something">
+                </div>
+            </div>
+            <main class="main-content">
+                <div class="setting-container">
+                    <div class="setting-tabs">
+                        <a href="#" class="tab-item active" data-tab="edit-profile-content">Edit Profile</a>
+                        <a href="#" class="tab-item" data-tab="preferences-content">Preferences</a>
+                        <a href="#" class="tab-item" data-tab="security-content">Security</a>
+                    </div>
+
+                    <div id="edit-profile-content" class="setting-content-pane active">
+                        <div class="setting-content">
+                            <div class="profile-pic-container">
+                                <img src="https://i.pravatar.cc/100?img=1" alt="Profile Picture" class="profile-pic-large">
+                                <button class="edit-pic-btn"><i class="ri-pencil-fill"></i></button>
+                            </div>
+                            <form class="setting-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="your-name">Your Name</label>
+                                        <input type="text" id="your-name" name="your-name" placeholder="Charlene Reed">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="user-name">User Name</label>
+                                        <input type="text" id="user-name" name="user-name" placeholder="Charlene Reed">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="charlenereed@gmail.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" name="password" placeholder="**********">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="date-of-birth">Date of Birth</label>
+                                        <div class="input-with-icon">
+                                            <input type="text" id="date-of-birth" name="date-of-birth" placeholder="25 January 1990">
+                                            <i class="ri-arrow-down-s-line"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="present-address">Present Address</label>
+                                        <input type="text" id="present-address" name="present-address" placeholder="San Jose, California, USA">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="permanent-address">Permanent Address</label>
+                                        <input type="text" id="permanent-address" name="permanent-address" placeholder="San Jose, California, USA">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input type="text" id="city" name="city" placeholder="San Jose">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="postal-code">Postal Code</label>
+                                        <input type="text" id="postal-code" name="postal-code" placeholder="45962">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country">Country</label>
+                                        <input type="text" id="country" name="country" placeholder="USA">
+                                    </div>
+                                </div>
+                                 <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div id="preferences-content" class="setting-content-pane">
+                         <form class="setting-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="currency">Currency</label>
+                                    <input type="text" id="currency" name="currency" placeholder="USD">
+                                </div>
+                                <div class="form-group">
+                                    <label for="time-zone">Time Zone</label>
+                                    <input type="text" id="time-zone" name="time-zone" placeholder="(GMT-12:00) International Date Line West">
+                                </div>
+                            </div>
+                            <div class="form-group notification-group">
+                                <label>Notification</label>
+                                <div class="notification-options">
+                                    <div class="notification-option">
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <span>I send or receive digita currency</span>
+                                    </div>
+                                    <div class="notification-option">
+                                        <label class="toggle-switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                        <span>I receive merchant order</span>
+                                    </div>
+                                    <div class="notification-option">
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <span>There are recommendation for my account</span>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="form-actions">
+                                <button type="submit" class="btn-primary">Save</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="security-content" class="setting-content-pane">
+                         <form class="setting-form">
+                            <div class="form-group notification-group">
+                                <label class="sub-heading">Two-factor Authentication</label>
+                                <div class="notification-options">
+                                    <div class="notification-option">
+                                        <label class="toggle-switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <span>Enable or disable two factor authentication</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                 <label class="sub-heading">Change Password</label>
+                                 <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="current-password">Current Password</label>
+                                        <input type="password" id="current-password" name="current-password" placeholder="**********">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="new-password">New Password</label>
+                                        <input type="password" id="new-password" name="new-password" placeholder="**********">
+                                    </div>
+                                 </div>
+                            </div>
+                             <div class="form-actions">
+                                <button type="submit" class="btn-primary">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a0e92a2da7.js" crossorigin="anonymous"></script>
+    <script src="assets/js/setting.js"></script>
+</body>
+</html> 

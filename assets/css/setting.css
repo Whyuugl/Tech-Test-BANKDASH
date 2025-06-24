@@ -1,0 +1,259 @@
+.setting-container {
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.setting-tabs {
+    display: flex;
+    border-bottom: 1px solid #E6EFF5;
+    margin-bottom: 2rem;
+}
+
+.tab-item {
+    position: relative;
+    padding: 0 1rem 1rem 1rem;
+    text-decoration: none;
+    color: #B1B1B1;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.tab-item.active,
+.tab-item:hover {
+    color: var(--blue-color);
+}
+
+.tab-item::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: var(--blue-color);
+    transition: width 0.3s ease;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.tab-item.active::after {
+    width: 100%;
+}
+
+.setting-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.profile-pic-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.profile-pic-large {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.edit-pic-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.setting-form {
+    width: 100%;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    color: #343C6A;
+    font-weight: 500;
+}
+
+.form-group input,
+.input-with-icon {
+    border: 1px solid #E6EFF5;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--blue-color);
+}
+
+.form-group input[type="password"] {
+    letter-spacing: 0.2em;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon input {
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+
+.input-with-icon input:focus {
+    outline: none;
+}
+
+.input-with-icon i {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #B1B1B1;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.btn-primary {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.setting-content-pane {
+    display: none;
+}
+
+.setting-content-pane.active {
+    display: block;
+}
+
+#preferences-content .setting-form {
+    width: 100%;
+}
+
+.notification-group {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.notification-options {
+    margin-top: 1rem;
+}
+
+.notification-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.notification-option:last-child {
+    margin-bottom: 0;
+}
+
+.notification-option span {
+    margin-left: 1rem;
+    color: #343C6A;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 66px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E9EDF0;
+    transition: .4s;
+    border-radius: 28px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+input:checked + .slider {
+    background-color: #00D09E;
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+.sub-heading {
+    font-weight: 600;
+    font-size: 16px;
+    color: #343C6A;
+    margin-bottom: 1rem;
+}
+
+#security-content .form-group {
+    display: block;
+}
+
+#security-content .form-row {
+    margin-bottom: 1.5rem;
+}
+
+#security-content .form-row .form-group {
+    width: 50%; /* Or adjust as needed */
+} 
